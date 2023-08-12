@@ -134,9 +134,9 @@ jobs:
           terraform_version: 1.5.2
 
       - name: Terraform Init
-        working-directory: ./infra/deploy
+        working-directory: ./infra
         run: terraform init
 
       - name: Terraform Validate
-        working-directory: ./infra/deploy
+        working-directory: ./infra
         run: terraform validate
